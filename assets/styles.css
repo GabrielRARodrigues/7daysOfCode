@@ -1,9 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
   font-size: 62.5%;
 
   --regular-gray: #667085;
   --title-gray: #101828;
   --main-red: #8e2424;
+  --background-wine: #8e24240d;
 }
 
 body {
@@ -73,6 +78,7 @@ header .container {
 }
 
 .banner__title {
+  letter-spacing: -0.02em;
   font-weight: 600;
   font-size: 4.8rem;
   color: var(--title-gray);
@@ -82,7 +88,8 @@ header .container {
   margin-inline: auto;
   margin-top: 3.6rem;
   font-size: 2rem;
-  width: 79.2rem;
+  line-height: 2.4rem;
+  max-width: 50%;
 }
 
 .metrics {
@@ -100,6 +107,7 @@ header .container {
 }
 
 .metrics__item-title {
+  letter-spacing: -0.02em;
   color: var(--main-red);
   font-size: 6rem;
   font-weight: 600;
@@ -111,4 +119,35 @@ header .container {
   font-weight: 500;
   color: var(--title-gray);
   margin-bottom: 0.8rem;
+}
+
+.vacancies {
+  padding: 9.6rem 8rem;
+  text-align: center;
+}
+
+.vacancies__description {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--main-red);
+  border-radius: 1.6rem;
+  background-color: var(--background-wine);
+  padding: 4px 12px;
+}
+
+.vacancies__title {
+  letter-spacing: -0.02em;
+  font-weight: 600;
+  font-size: 3.6rem;
+  color: var(--title-gray);
+  margin-block: 1.6rem 2rem;
+}
+
+.vacancies__text {
+  font-size: 20px;
+  margin-bottom: 6.4rem;
+}
+
+.vacancies__image {
+  width: 100%;
 }
