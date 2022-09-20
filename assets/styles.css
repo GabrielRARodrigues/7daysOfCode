@@ -9,6 +9,7 @@
   --title-gray: #101828;
   --main-red: #8e2424;
   --background-wine: #8e24240d;
+  --border-gray: #eaecf0;
 }
 
 body {
@@ -150,4 +151,42 @@ header .container {
 
 .vacancies__image {
   width: 100%;
+}
+
+.available-vacancies {
+  width: 60%;
+  margin-inline: auto;
+  text-align: left;
+}
+
+.vacancies__area {
+  margin-block: 6.4rem;
+}
+
+.vacancies__area-title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--title-gray);
+  margin-bottom: 3.2rem;
+}
+
+.vacancies__area-card {
+  padding: 2.4rem;
+  padding-bottom: 2.8rem;
+  border: 1px solid var(--border-gray);
+  border-radius: 16px;
+  margin-block: 2.4rem;
+}
+
+.vacancies__card-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--title-gray);
+  margin-bottom: 3.2rem;
+}
+
+.vacancies__card-time,
+.vacancies__card-wage {
+  font-weight: 500;
+  margin-right: 2.4rem;
 }
