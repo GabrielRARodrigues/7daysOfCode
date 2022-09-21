@@ -8,8 +8,9 @@
   --regular-gray: #667085;
   --title-gray: #101828;
   --main-red: #8e2424;
-  --background-wine: #8e24240d;
+  --background-text-wine: #8e24240d;
   --border-gray: #eaecf0;
+  --background-container-wine: #c4191908;
 }
 
 body {
@@ -132,7 +133,7 @@ header .container {
   font-weight: 500;
   color: var(--main-red);
   border-radius: 1.6rem;
-  background-color: var(--background-wine);
+  background-color: var(--background-text-wine);
   padding: 4px 12px;
 }
 
@@ -189,4 +190,43 @@ header .container {
 .vacancies__card-wage {
   font-weight: 500;
   margin-right: 2.4rem;
+}
+
+.depositions {
+  padding: 0 11.2rem 9.6rem 11.2rem;
+}
+
+.depositions .container {
+  padding: 6.4rem;
+  background-color: var(--background-container-wine);
+  text-align: center;
+}
+
+.depositions__description {
+  color: var(--main-red);
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.depositions__title {
+  font-weight: 500;
+  font-size: 3.6rem;
+  letter-spacing: -0.02em;
+  color: var(--title-gray);
+  margin-block: 1.6rem 3.2rem;
+}
+
+.depositions-collaborator__avatar {
+  width: 5.6rem;
+  border-radius: 50%;
+}
+
+.depositions-collaborator__name {
+  font-weight: 500;
+  color: var(--title-gray);
+  margin-block: 1.6rem 0.4rem;
+}
+
+.depositions-collaborator__occupation {
+  font-size: 1.4rem;
 }
