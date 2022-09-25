@@ -1,3 +1,5 @@
+/**Geral**/
+
 * {
   box-sizing: border-box;
 }
@@ -25,14 +27,69 @@ input::placeholder {
   color: var(--regular-gray);
 }
 
-.main-header {
-  padding: 1.8rem 8rem;
+h1,
+h2,
+h3,
+h4 {
+  color: var(--title-gray);
+}
+
+h1,
+h2 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+h3,
+h4,
+span,
+.button,
+.button--open {
+  font-weight: 500;
+}
+
+button,
+input {
+  box-shadow: 0 1px 2px var(--input-shadow);
+  border-radius: 8px;
+  outline: 0;
+  border: none;
+}
+span {
+  display: inline-block;
+}
+
+section,
+footer {
+  padding-block: 9.6rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+h4 {
+  font-size: 1.8rem;
 }
 
 .container {
   max-width: 128rem;
   margin-inline: auto;
   padding-inline: 3.2rem;
+  padding-inline: 3.2rem;
+  text-align: center;
+}
+
+.navbar__list,
+.metrics__list {
+  display: flex;
+  gap: 3.2rem;
+  justify-content: center;
+}
+
+/**Sections**/
+
+.main-header {
+  padding: 1.8rem 8rem;
 }
 
 header .container {
@@ -47,95 +104,73 @@ header .container {
   gap: 12rem;
 }
 
-.navbar__list {
-  display: flex;
-  gap: 3.2rem;
-}
-
 .navbar__link {
   text-decoration: none;
   color: var(--regular-gray);
   font-weight: 500;
 }
 
-.navbar__button {
-  text-decoration: none;
+.button {
   color: white;
   background-color: var(--main-red);
-  padding: 10px 18px;
-  border-radius: 8px;
+  padding: 1.2rem 2rem;
 }
 
-.navbar__button--open {
+.button--open {
+  box-shadow: none;
   background-color: transparent;
   color: var(--regular-gray);
-  font-weight: 500;
 }
 
 .banner {
-  text-align: center;
-  padding-block: 9.6rem 10.8rem;
+  padding-bottom: 10.8rem;
 }
 
 .banner__description {
   font-weight: 600;
   color: var(--main-red);
-  display: inline-block;
   margin-bottom: 2.4rem;
 }
 
 .banner__title {
-  letter-spacing: -0.02em;
-  font-weight: 600;
   font-size: 4.8rem;
-  color: var(--title-gray);
 }
 
 .banner__text {
   margin-inline: auto;
   margin-top: 3.6rem;
   font-size: 2rem;
-  line-height: 2.4rem;
   max-width: 65%;
 }
 
 .metrics {
-  padding-bottom: 9.6rem;
+  padding-top: 0;
 }
 
-.metrics__list {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
+.metrics .container {
+  text-align: left;
 }
 
 .metrics__item {
-  width: 28rem;
+  max-width: 28rem;
 }
 
 .metrics__item-title {
-  letter-spacing: -0.02em;
   color: var(--main-red);
   font-size: 6rem;
-  font-weight: 600;
   margin-bottom: 1.2rem;
 }
 
 .metrics__item-subtitle {
-  font-size: 1.8rem;
-  font-weight: 500;
-  color: var(--title-gray);
   margin-bottom: 0.8rem;
 }
 
 .vacancies {
-  padding: 9.6rem 8rem;
-  text-align: center;
+  padding-inline: 8rem;
 }
 
 .vacancies__description {
   font-size: 1.4rem;
-  font-weight: 500;
   color: var(--main-red);
   border-radius: 1.6rem;
   background-color: var(--background-text-wine);
@@ -143,10 +178,6 @@ header .container {
 }
 
 .vacancies__title {
-  letter-spacing: -0.02em;
-  font-weight: 600;
-  font-size: 3.6rem;
-  color: var(--title-gray);
   margin-block: 1.6rem 2rem;
 }
 
@@ -171,8 +202,6 @@ header .container {
 
 .vacancies__area-title {
   font-size: 2rem;
-  font-weight: 500;
-  color: var(--title-gray);
   margin-bottom: 3.2rem;
 }
 
@@ -185,26 +214,21 @@ header .container {
 }
 
 .vacancies__card-title {
-  font-size: 1.8rem;
-  font-weight: 500;
-  color: var(--title-gray);
   margin-bottom: 3.2rem;
 }
 
 .vacancies__card-time,
 .vacancies__card-wage {
-  font-weight: 500;
   margin-right: 2.4rem;
 }
 
 .depositions {
-  padding: 0 11.2rem 9.6rem 11.2rem;
+  padding: 0 11.2rem 9.6rem;
 }
 
 .depositions .container {
   padding: 6.4rem;
   background-color: var(--background-container-wine);
-  text-align: center;
 }
 
 .depositions__description {
@@ -215,9 +239,6 @@ header .container {
 
 .depositions__title {
   font-weight: 500;
-  font-size: 3.6rem;
-  letter-spacing: -0.02em;
-  color: var(--title-gray);
   margin-block: 1.6rem 3.2rem;
 }
 
@@ -227,8 +248,6 @@ header .container {
 }
 
 .depositions-collaborator__name {
-  font-weight: 500;
-  color: var(--title-gray);
   margin-block: 1.6rem 0.4rem;
 }
 
@@ -243,14 +262,6 @@ header .container {
 
 .footer .container {
   max-width: 832px;
-  text-align: center;
-}
-
-.footer__title {
-  font-family: 600;
-  font-size: 3.6rem;
-  letter-spacing: -0.02rem;
-  color: var(--title-gray);
 }
 
 .footer__text {
@@ -270,22 +281,10 @@ header .container {
   width: calc(48% - 8px);
   padding: 1.2rem 1.4rem 1.2rem 1.6rem;
   border: 1px solid var(--input-border);
-  box-shadow: 0 1px 2px var(--input-shadow);
-  border-radius: 0.8rem;
-  outline: 0;
-}
-
-.footer-form__button {
-  padding: 1.2rem 2rem;
-  background-color: var(--main-red);
-  border: 1px solid var(--main-red);
-  box-shadow: 0 1px 2px var(--input-shadow);
-  border-radius: 8px;
-  color: white;
 }
 
 .footer__copyright {
-  display: inline-block;
+  font-weight: 400;
   margin-top: 3.2rem;
   color: var(--copywright-color);
 }
