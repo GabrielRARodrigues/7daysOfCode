@@ -1,4 +1,4 @@
-/**Geral**/
+/***Geral***/
 
 * {
   box-sizing: border-box;
@@ -86,7 +86,7 @@ h4 {
   justify-content: center;
 }
 
-/**Sections**/
+/***Sections***/
 
 .main-header {
   padding: 1.8rem 8rem;
@@ -94,7 +94,7 @@ h4 {
 
 header .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -120,6 +120,7 @@ header .container {
   box-shadow: none;
   background-color: transparent;
   color: var(--regular-gray);
+  margin-right: 1.2rem;
 }
 
 .banner {
@@ -287,4 +288,108 @@ header .container {
   font-weight: 400;
   margin-top: 3.2rem;
   color: var(--copywright-color);
+}
+
+/***User interaction and Animatios***/
+.navbar__link {
+  transition: all 400ms;
+}
+
+.navbar__link:hover {
+  transition: all 400ms;
+  color: var(--main-red);
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.navbar__link::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  opacity: 1;
+  background-color: var(--main-red);
+  position: relative;
+  bottom: -1.8rem;
+  transition: all 400ms;
+}
+.navbar__link:hover::after {
+  transition: all 400ms;
+  opacity: 1;
+  width: 100%;
+}
+
+.button {
+  transition: all 400ms;
+  cursor: pointer;
+}
+
+.button:hover {
+  transition: all 400ms;
+  transform: scale(1.2);
+  filter: brightness(1.15);
+}
+
+.button--open:hover {
+  transition: all 400ms;
+  background-color: var(--title-gray);
+  color: white;
+}
+
+.footer-form__email:focus {
+  transition: all 100ms;
+  border: 2px solid var(--title-gray);
+}
+
+section,
+footer {
+  animation: fromBottom 700ms backwards;
+}
+
+header {
+  animation: fromTop 700ms 0.3s backwards;
+}
+
+.banner {
+  animation-delay: 0;
+}
+
+.metrics {
+  animation-delay: 0.4s;
+}
+
+.vacancies {
+  animation-delay: 0.6s;
+}
+
+.depositions {
+  animation-delay: 0.8s;
+}
+
+.footer {
+  animation-delay: 1s;
+}
+
+@keyframes fromBottom {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fromTop {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
